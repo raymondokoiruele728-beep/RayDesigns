@@ -1410,6 +1410,6 @@ a:active {
 .developer-img {
     max-width: 100%;
     height: auto;
-    width: 400px; /* Adjust this number to change the display size */
+    width: 100px; /* Adjust this number to change the display size */
     border-radius: 8px; /* Optional: adds soft rounded corners */
 }
