@@ -1413,3 +1413,44 @@ a:active {
     width: 100px; /* Adjust this number to change the display size */
     border-radius: 8px; /* Optional: adds soft rounded corners */
 }
+
+.nav-center {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 8px;
+  align-items: center;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  font-size: 16px; /* Matches your layout font size */
+}
+
+/* Adds the dynamic visual slash separator between breadcrumb links */
+.breadcrumb-item:not(:last-child)::after {
+  content: "/";
+  margin-left: 8px;
+  color: rgba(248, 250, 252, 0.4); /* Faded white separator */
+}
+
+.nav-link {
+  color: #f8fafc;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #3b82f6; /* Changes to a sleek blue on hover */
+}
+
+/* Distinct style for the final, active item */
+.breadcrumb-item.active .nav-link {
+  color: rgba(248, 250, 252, 0.6);
+  pointer-events: none; /* Disables clicking on the current section */
+}
+
