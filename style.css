@@ -1408,9 +1408,9 @@ a:active {
 }
 
 .developer-img {
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
-    width: 100px; /* Adjust this number to change the display size */
+    width: 250px; /* Adjust this number to change the display size */
     border-radius: 8px; /* Optional: adds soft rounded corners */
 }
 
