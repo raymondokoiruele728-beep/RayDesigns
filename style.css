@@ -2513,3 +2513,26 @@ button {
         break-inside: avoid;
     }
 }
+/* Global Color Theme Setup */
+:root {
+  --site-background: #0f172a;  /* Set your main background here */
+  --card-background: #1e293b;  /* Set your section boxes here */
+  --main-text: #f8fafc;        /* Set your text color here */
+  --accent-color: #38bdf8;     /* Set your buttons/links here */
+}
+
+/* Applying the Colors Globally */
+body {
+  background-color: var(--site-background) !important;
+  color: var(--main-text) !important;
+}
+
+/* Applying colors to your existing sections */
+.hero-section, .About, .Services, .Portfolio {
+  background-color: var(--card-background);
+  color: var(--main-text);
+}
+
+a {
+  color: var(--accent-color);
+}
