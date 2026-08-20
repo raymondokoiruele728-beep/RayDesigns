@@ -2532,6 +2532,55 @@ body {
   background-color: var(--card-background);
   color: var(--main-text);
 }
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+    min-width: 320px;
+
+    overflow-x: hidden;
+
+    font-family:
+        Inter,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    color: #f8fafc;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(99, 102, 241, 0.16),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 15%,
+            rgba(201, 162, 39, 0.10),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(79, 70, 229, 0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #070b14 0%,
+            #0b1220 45%,
+            #111827 100%
+        );
+
+    background-attachment: fixed;
+
+    line-height: 1.6;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 a {
   color: var(--accent-color);
